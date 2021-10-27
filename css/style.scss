@@ -12,6 +12,7 @@ $color-text-ligth: #505282;
 body {
     background-color: $colorBG;
     font-family: 'Rubik', sans-serif;
+    font-size: 18px;
 }
 .bgwork {
     background-color: $color-work;
@@ -89,6 +90,7 @@ body {
 }
 .bgComponent {
     height: 10em;
+    width: calc(100% - 1.2em);
     display: flex;
     align-items: flex-end;
     margin-bottom: 1.5em;
@@ -136,6 +138,77 @@ body {
                 margin-top: 0px;
                 color: white;
                 font-weight: 300;
+            }
+        }
+    }
+}
+@media (min-width: 750px) {
+    .componentes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    #app {
+        display: flex;
+        height: 100vh;
+        margin: 0px auto;
+        align-items: center;
+        justify-content: center;
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 3.5fr;
+            column-gap: .5em;
+            align-items: stretch;
+            max-width: 80%;
+            .cardPrincipal{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                .secArriba {
+                    height: 70%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    img {
+                        margin-top: 2em;
+                    }
+                    .infoName {
+                        margin-top: 1.5em;
+                        margin-left: 1.6em;
+                    }
+                }
+                ul {
+                    display: list-item;
+                    margin-left: 2em;
+                    li {
+                        margin-top: .5em;
+                    }
+                }
+            }
+            .componentes{
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 1em;
+                .bgComponent {
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    .bgFondo {
+                        .titulo {
+                            margin-top: .7em;
+                            margin-bottom: .7em;
+                            span {
+                                font-size: .9em;
+                            }
+                        }
+                        .info {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        &:hover {
+                            background-color: #2d3053;
+                            transition: all ease .3s;
+                        }
+                    }
+                }
             }
         }
     }

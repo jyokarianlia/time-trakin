@@ -15,25 +15,23 @@
 <body> 
   <div id="app">
     <div class="contenedor">
-      <div>
-        <div class="cardPrincipal">
-          <div class="secArriba">
-            <img src="images/image-jeremy.png" alt="photo_user">
-            <div>
-              <label>Report for</label>
-              <p>Jeremy Robson</p>
-            </div>
-          </div>
-          <div class="secAbajo">
-            <ul>
-              <li @click="seccionTipo('daily')" :class="{'timeSelected':time=='daily'}">Daily</li>
-              <li @click="seccionTipo('weekly')" :class="{'timeSelected':time=='weekly'}">Weekly</li>
-              <li @click="seccionTipo('monthly')" :class="{'timeSelected':time=='monthly'}">Monthly</li>
-            </ul>
+      <div class="cardPrincipal">
+        <div class="secArriba">
+          <img src="images/image-jeremy.png" alt="photo_user">
+          <div class="infoName">
+            <label>Report for</label>
+            <p>Jeremy Robson</p>
           </div>
         </div>
-      </div><br>
-      <div>
+        <div class="secAbajo">
+          <ul>
+            <li @click="seccionTipo('daily')" :class="{'timeSelected':time=='daily'}">Daily</li>
+            <li @click="seccionTipo('weekly')" :class="{'timeSelected':time=='weekly'}">Weekly</li>
+            <li @click="seccionTipo('monthly')" :class="{'timeSelected':time=='monthly'}">Monthly</li>
+          </ul>
+        </div>
+      </div>
+      <div class="componentes">
         <card v-for="item in info"
         :tema="item.title"
         :predaily="item.timeframes.daily.current"

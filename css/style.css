@@ -1,6 +1,7 @@
 body {
   background-color: #0d1323;
   font-family: 'Rubik', sans-serif;
+  font-size: 18px;
 }
 
 .bgwork {
@@ -102,6 +103,7 @@ body {
 
 .bgComponent {
   height: 10em;
+  width: calc(100% - 1.2em);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +175,102 @@ body {
   margin-top: 0px;
   color: white;
   font-weight: 300;
+}
+
+@media (min-width: 750px) {
+  .componentes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  #app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    margin: 0px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #app .contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3.5fr;
+        grid-template-columns: 1fr 3.5fr;
+    -webkit-column-gap: .5em;
+            column-gap: .5em;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    max-width: 80%;
+  }
+  #app .contenedor .cardPrincipal {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #app .contenedor .cardPrincipal .secArriba {
+    height: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #app .contenedor .cardPrincipal .secArriba img {
+    margin-top: 2em;
+  }
+  #app .contenedor .cardPrincipal .secArriba .infoName {
+    margin-top: 1.5em;
+    margin-left: 1.6em;
+  }
+  #app .contenedor .cardPrincipal ul {
+    display: list-item;
+    margin-left: 2em;
+  }
+  #app .contenedor .cardPrincipal ul li {
+    margin-top: .5em;
+  }
+  #app .contenedor .componentes {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+  }
+  #app .contenedor .componentes .bgComponent {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #app .contenedor .componentes .bgComponent .bgFondo .titulo {
+    margin-top: .7em;
+    margin-bottom: .7em;
+  }
+  #app .contenedor .componentes .bgComponent .bgFondo .titulo span {
+    font-size: .9em;
+  }
+  #app .contenedor .componentes .bgComponent .bgFondo .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #app .contenedor .componentes .bgComponent .bgFondo:hover {
+    background-color: #2d3053;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+  }
 }
 
 .attribution {
