@@ -1,124 +1,124 @@
 const app = Vue.createApp({
     data() {
-        return {
-            info: {
-                info1: {
-                  title: "Work",
-                  timeframes: {
-                    daily: {
-                      current: 5,
-                      previous: 7
-                    },
-                    weekly: {
-                      current: 32,
-                      previous: 36
-                    },
-                    monthly: {
-                      current: 103,
-                      previous: 128
-                    }
-                  },
+      return {
+        info: {
+          info1: {
+            title: "Work",
+            timeframes: {
+              daily: {
+                current: 5,
+                previous: 7
+              },
+              weekly: {
+                current: 32,
+                previous: 36
+              },
+              monthly: {
+                current: 103,
+                previous: 128
+              }
+            },
 				  bg: "bgwork",
 				  url: "images/icon-work.svg"
-                },
-                  info2: {
-                    title: "Play",
-                    timeframes: {
-                      daily: {
-                        current: 1,
-                        previous: 2
-                      },
-                      weekly: {
-                        current: 10,
-                        previous: 8
-                      },
-                      monthly: {
-                        current: 23,
-                        previous: 29
-                      }
-                    },
-					bg: "bgplay",
-					url: "images/icon-play.svg"
-                  },
-                  info3 :  {
-                    title: "Study",
-                    timeframes: {
-                      daily: {
-                        current: 0,
-                        previous: 1
-                      },
-                      weekly: {
-                        current: 4,
-                        previous: 7
-                      },
-                      monthly: {
-                        current: 13,
-                        previous: 19
-                      }
-                    },
+        },
+        info2: {
+          title: "Play",
+          timeframes: {
+            daily: {
+              current: 1,
+              previous: 2
+            },
+            weekly: {
+              current: 10,
+              previous: 8
+            },
+            monthly: {
+              current: 23,
+              previous: 29
+            }
+          },
+          bg: "bgplay",
+          url: "images/icon-play.svg"
+        },
+        info3 :  {
+          title: "Study",
+          timeframes: {
+            daily: {
+              current: 0,
+              previous: 1
+            },
+            weekly: {
+              current: 4,
+              previous: 7
+            },
+            monthly: {
+              current: 13,
+              previous: 19
+            }
+          },
 					bg: "bgstudy",
 					url: "images/icon-study.svg"
-                  },
-                  info4  :{
-                    title: "Exercise",
-                    timeframes: {
-                      daily: {
-                        current: 1,
-                        previous: 1
-                      },
-                      weekly: {
-                        current: 4,
-                        previous: 5
-                      },
-                      monthly: {
-                        current: 11,
-                        previous: 18
-                      }
-                    },
+        },
+        info4  :{
+          title: "Exercise",
+          timeframes: {
+            daily: {
+              current: 1,
+              previous: 1
+            },
+            weekly: {
+              current: 4,
+              previous: 5
+            },
+            monthly: {
+              current: 11,
+              previous: 18
+            }
+          },
 					bg: "bgexercise",
 					url: "images/icon-exercise.svg"
-                  },
-                  info5: {
-                    title: "Social",
-                    timeframes: {
-                      daily: {
-                        current: 1,
-                        previous: 3
-                      },
-                      weekly: {
-                        current: 5,
-                        previous: 10
-                      },
-                      monthly: {
-                        current: 21,
-                        previous: 23
-                      }
-                    },
+        },
+        info5: {
+          title: "Social",
+          timeframes: {
+            daily: {
+              current: 1,
+              previous: 3
+            },
+            weekly: {
+              current: 5,
+              previous: 10
+            },
+            monthly: {
+              current: 21,
+              previous: 23
+            }
+          },
 					bg: "bgsocial",
 					url: "images/icon-social.svg"
-                  },
-                  info6: {
-                    title: "Self Care",
-                    timeframes: {
-                      daily: {
-                        current: 0,
-                        previous: 1
-                      },
-                      weekly: {
-                        current: 2,
-                        previous: 2
-                      },
-                      monthly: {
-                        current: 7,
-                        previous: 11
-                      }
-                    },
+        },
+        info6: {
+          title: "Self Care",
+          timeframes: {
+            daily: {
+              current: 0,
+              previous: 1
+            },
+            weekly: {
+              current: 2,
+              previous: 2
+            },
+            monthly: {
+              current: 7,
+              previous: 11
+            }
+          },
 					bg: "bgself",
 					url: "images/icon-self-care.svg"
-                  }
-            },
-			time: "weekly"
-        }
+          }
+        },
+			  time: "weekly"
+      }
     },
 	methods: {
 		seccionTipo(tipo) {
