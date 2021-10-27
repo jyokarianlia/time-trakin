@@ -37,7 +37,7 @@ body {
     background-color: $colorBGComponent;
     overflow: hidden;
     border-radius: .7em;
-    margin: 6em .6em .5em .6em;
+    margin: 6em .6em 1.5em .6em;
     .secArriba {
         background-color: $color-user;
         border-radius: .7em;
@@ -107,7 +107,7 @@ body {
     .bgFondo {
         background-color: $colorBGComponent;
         width: 100%;
-        height: 73%;
+        height: 80%;
         border-radius: 1em;
         z-index: 2;
         .titulo {
@@ -131,13 +131,16 @@ body {
             justify-content: space-between;
             align-items: center;
             color: $color-text-ligth;
-            margin: 0px 1.5em 1em 1.5em;
+            margin: .5em 1.5em 1em 1.5em;
             .pre {
-                font-size: 2.5em;
+                font-size: 2em;
                 padding-top: 0px;
                 margin-top: 0px;
                 color: white;
                 font-weight: 300;
+            }
+            .pos {
+                font-size: .8em;
             }
         }
     }
@@ -172,15 +175,18 @@ body {
                         margin-top: 2em;
                     }
                     .infoName {
-                        margin-top: 1.5em;
-                        margin-left: 1.6em;
+                        margin-top: 2.4em;
+                        margin-left: 1.2em;
+                        p {
+                            font-size: 2.2em;
+                        }
                     }
                 }
                 ul {
                     display: list-item;
                     margin-left: 2em;
                     li {
-                        margin-top: .5em;
+                        margin-top: 1em;
                     }
                 }
             }
@@ -188,6 +194,7 @@ body {
                 grid-template-columns: 1fr 1fr 1fr;
                 row-gap: 1em;
                 .bgComponent {
+                    height: 13em;
                     margin-bottom: 0px;
                     margin-left: 0px;
                     margin-right: 0px;
@@ -202,6 +209,13 @@ body {
                         .info {
                             flex-direction: column;
                             align-items: flex-start;
+                            margin-top: 1.5em;
+                            .pre {
+                                font-size: 2.5em;
+                            }
+                            .pos {
+                                margin-top: 1em;
+                            }
                         }
                         &:hover {
                             background-color: #2d3053;

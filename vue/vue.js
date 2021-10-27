@@ -163,17 +163,17 @@ app.component('card', {
 					</label>
 
 					<label class="pre" v-if="time=='weekly'">
-						{{preweekly}} hrs
+						{{preweekly}}hrs
 					</label>
 					<label class="pos" v-if="time=='weekly'">
-						Last Week - {{posweekly}} hrs
+						Last Week - {{posweekly}}hrs
 					</label>
 
 					<label class="pre" v-if="time=='monthly'">
-						{{premonthly}} hrs
+						{{premonthly}}hrs
 					</label>
 					<label class="pos" v-if="time=='monthly'">
-						Last Week - {{posmonthly}} hrs
+						Last Week - {{posmonthly}}hrs
 					</label>
 				</div>
 			</div>
